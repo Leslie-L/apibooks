@@ -1,4 +1,4 @@
-import { booksList } from "../data"
+import { booksList } from "../data.js"
 
 export const books = (_,args)=>{
     return booksList

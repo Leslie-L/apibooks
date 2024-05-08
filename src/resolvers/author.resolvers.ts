@@ -1,7 +1,7 @@
-import { authorsList } from "../data";
+import { authorsList } from "../data.js";
 export const author = (_,{id})=>{
     return authorsList.find(item=>item.id===id)
 }
-export const autors =(_,args)=>{
+export const authors =(_,args)=>{
     return authorsList
 }

@@ -1,8 +1,11 @@
-import { book,books } from "./book.resolvers";
+import { author, authors } from "./author.resolvers.js";
+import { book,books } from "./book.resolvers.js";
 
 export const resolvers = {
     Query: {
       book,
-      books
+      books,
+      author,
+      authors
     },
   };
