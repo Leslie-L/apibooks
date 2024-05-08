@@ -1,5 +1,5 @@
 import { author, authors } from "./author.resolvers.js";
-import { book,books } from "./book.resolvers.js";
+import { book,bookAuthor,books } from "./book.resolvers.js";
 
 export const resolvers = {
     Query: {
@@ -8,4 +8,7 @@ export const resolvers = {
       author,
       authors
     },
+    Book:{
+      author:bookAuthor
+    }
   };
