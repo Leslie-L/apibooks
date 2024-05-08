@@ -8,5 +8,5 @@ export const book = (_,{id})=>{
 }
 
 export const bookAuthor = (parent)=>{
-    return authorsList.find(item=>item.id===parent.id)
+    return authorsList.find(item=>item.id===parent.author_id)
 }
