@@ -1,4 +1,4 @@
-import { author, authors, booksAuthors } from "./author.resolvers.js";
+import { addAuthor, author, authors, booksAuthors, updateAuthor } from "./author.resolvers.js";
 import { book,bookAuthor,books } from "./book.resolvers.js";
 
 export const resolvers = {
@@ -13,5 +13,9 @@ export const resolvers = {
     },
     Author:{
       books:booksAuthors
+    },
+    Mutation:{
+      addAuthor,
+      updateAuthor
     }
   };
