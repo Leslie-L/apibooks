@@ -1,6 +1,6 @@
 import { booksList, authorsList } from "../data.js"
 
-export const books = (_,args)=>{
+export const books = ()=>{
     return booksList
 }
 export const book = (_,{id})=>{
