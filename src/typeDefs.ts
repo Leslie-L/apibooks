@@ -26,5 +26,41 @@ export const typeDefs = `#graphql
     author(id:ID!):Author
     authors:[Author]
   }
+  input AddAuthor {
+    name:String!
+    birthdate:String!
+    deathdate:String
+    nationality:String!
+    bio:String!
+  }
+  input UpdateAuthor{
+    name:String
+    birthdate:String
+    deathdate:String
+    nationality:String
+    bio:String
+  }
+  input AddBook{
+    title: String!
+    img:String!
+    author_id: ID!
+    genre:String!
+    year:Int!
+    synopsis:String!
+  }
+  input UpdateBook{
+    title: String
+    img:String
+    author_id: ID
+    genre:String
+    year:Int
+    synopsis:String
+  }
+  type Mutation{
+    addAuthor(author:AddAuthor!):Author,
+    updateAuthor(info:UpdateAuthor):Author,
+    addBook(book:AddBook):Book,
+    updateBook(book:UpdateBook):Book,
+  }
 `;
 
