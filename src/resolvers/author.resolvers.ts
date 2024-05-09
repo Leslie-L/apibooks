@@ -14,7 +14,6 @@ export const addAuthor = (_,args)=>{
         ...args.author,
         id
     }
-    console.log(data)
     authorsList.push(data)
     return data
 }
