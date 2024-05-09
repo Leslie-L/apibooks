@@ -8,12 +8,13 @@ export const authors =()=>{
 export const booksAuthors =(parent)=>{
     return booksList.filter(item=>item.author_id==parent.id)
 }
-export const addAuthor = (_args)=>{
+export const addAuthor = (_,args)=>{
     const id = crypto.randomUUID()
     const data = {
-        ..._args,
+        ...args.author,
         id
     }
+    console.log(data)
     authorsList.push(data)
     return data
 }

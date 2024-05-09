@@ -1,5 +1,5 @@
 import { addAuthor, author, authors, booksAuthors, updateAuthor } from "./author.resolvers.js";
-import { book,bookAuthor,books } from "./book.resolvers.js";
+import { addBook, book,bookAuthor,books, updateBook } from "./book.resolvers.js";
 
 export const resolvers = {
     Query: {
@@ -16,6 +16,8 @@ export const resolvers = {
     },
     Mutation:{
       addAuthor,
-      updateAuthor
+      updateAuthor,
+      addBook,
+      updateBook
     }
   };
